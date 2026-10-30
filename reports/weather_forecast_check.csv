@@ -1,0 +1,5 @@
+weather input,model,MAE,cost
+observed (archive),LightGBM regressor,280.18,382846.24
+observed (archive),LightGBM quantile plan,280.18,332229.93
+D-1 forecast,LightGBM regressor,284.63,385046.13
+D-1 forecast,LightGBM quantile plan,284.63,330922.48

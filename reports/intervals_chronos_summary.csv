@@ -1,0 +1,5 @@
+setup,model,coverage,width,worst_fold_coverage
+D-1,Chronos-2 (zero-shot),0.9381,1515.2496,0.9149
+D-1,Chronos-2 + covariates,0.9335,1337.8833,0.8865
+D-1,Chronos-Bolt (zero-shot),0.9035,1517.0114,0.8051
+Nowcast 07:00,Chronos-2 + covariates,0.9463,1183.8204,0.9217

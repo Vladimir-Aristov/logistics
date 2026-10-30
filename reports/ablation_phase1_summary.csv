@@ -1,0 +1,7 @@
+variant,mae,mae_vs_full,plan_cost_vs_full,dm_p_vs_full
+no_calendar,312.3779,0.0918,0.0366,0.0027
+no_weather,297.3144,0.0391,0.0139,0.0084
+no_ratio_lags,294.5008,0.0293,0.0709,0.147
+no_truck_mix,290.385,0.0149,0.0108,0.2807
+full,286.1164,0.0,0.0,
+no_diesel,281.3165,-0.0168,-0.0095,0.0983

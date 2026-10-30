@@ -1,0 +1,13 @@
+feature,importance_share,psi
+morning_ratio,0.4484,0.3865
+mta_morning_ratio,0.2748,0.2643
+morning_share_of_sched,0.0806,0.4055
+ratio_lag1,0.0282,0.6848
+ratio_roll7,0.0174,1.9986
+sched_vs_roll28,0.0163,0.1262
+ratio_roll28,0.0126,3.8448
+ratio_lag14,0.0096,0.7355
+ratio_lag7,0.0094,1.036
+ratio_lag2,0.0093,0.6995
+mta_ratio_roll7,0.0084,0.429
+ratio_std28,0.008,1.2571

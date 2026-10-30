@@ -1,0 +1,43 @@
+{
+  "d1": {
+    "name": "D-1 (evening before)",
+    "cutoff": "2026-06-30",
+    "data_end": "2026-09-30",
+    "observed_days": 92,
+    "mae": 262.8879405421631,
+    "mae_schedule": 368.5271739130435,
+    "cost_vs_schedule": -0.15359305708394655,
+    "coverage": 0.9565217391304348,
+    "health": {
+      "status": "drift warning",
+      "reasons": [],
+      "warnings": [
+        "feature drift (PSI > 0.25 vs. same season last year): ratio_lag1, mta_carey_ratio_lag1"
+      ],
+      "last_days": 28,
+      "mae_vs_schedule": -0.2979590818329295,
+      "coverage": 1.0
+    }
+  },
+  "nowcast": {
+    "name": "Nowcast 07:00",
+    "cutoff": "2026-06-30",
+    "data_end": "2026-09-30",
+    "observed_days": 92,
+    "mae": 200.9828031690544,
+    "mae_schedule": 368.5271739130435,
+    "cost_vs_schedule": -0.3915736258303719,
+    "coverage": 0.9565217391304348,
+    "health": {
+      "status": "drift warning",
+      "reasons": [],
+      "warnings": [
+        "feature drift (PSI > 0.25 vs. same season last year): morning_ratio, mta_morning_ratio, morning_share_of_sched"
+      ],
+      "last_days": 28,
+      "mae_vs_schedule": -0.565759475557144,
+      "coverage": 0.9285714285714286
+    }
+  },
+  "generated": "2026-10-30 15:32 EDT"
+}

@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wim-forecast"
+version = "1.0.0"
+description = "Truck demand vs. schedule: fleet forecasting and dispatch planning on NYC Weigh-in-Motion data"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Vladimir Aristov" }]
+dependencies = [
+    "pandas>=2.2",
+    "numpy>=2.0",
+    "pyarrow>=17",
+    "requests>=2.32",
+    "holidays>=0.60",
+    "scikit-learn>=1.5",
+    "scipy>=1.13",
+    "lightgbm>=4.5",
+    "matplotlib>=3.9",
+    "joblib>=1.4",
+]
+
+[project.urls]
+Repository = "https://github.com/Vladimir-Aristov/logistics"
+Dashboard = "https://vladimir-aristov.github.io/logistics/"
+
+[project.optional-dependencies]
+# research models: GRU, N-HiTS, Chronos, classical TS baselines
+research = [
+    "torch>=2.5",
+    "statsforecast>=2.0",
+    "statsmodels>=0.14",
+    "chronos-forecasting>=2.0",
+    "neuralforecast>=3.0",
+]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.scripts]
+wim = "wim_forecast.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+wim_forecast = ["templates/*.html"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+ignore = ["E402", "E702", "E731"]  # matplotlib backend before pyplot; one-line plotting calls

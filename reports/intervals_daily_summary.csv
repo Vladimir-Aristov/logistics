@@ -1,0 +1,5 @@
+method,coverage,width,winkler,worst_fold_coverage,best_fold_coverage
+cqr+aci,0.8998,1385.7796,1748.367,0.8723,0.9231
+cqr,0.8625,1147.0079,1774.9593,0.8016,0.924
+raw quantiles (no conformal),0.8397,1103.0457,1798.1189,0.786,0.924
+split,0.8734,1134.4154,2394.3735,0.8051,0.9639

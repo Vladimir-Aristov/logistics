@@ -1,0 +1,9 @@
+data/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+*.egg-info/
+# out-of-fold predictions are reproducible from `make backtest research`; the tables in reports/ are kept
+reports/backtest/
+lightning_logs/
